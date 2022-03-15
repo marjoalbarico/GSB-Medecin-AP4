@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="paneID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.AjouteAdminControleur">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="20.0" prefHeight="27.0" prefWidth="490.0" text="AJOUTER UN NOUVEAU COMPTE ADMIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="73.0" prefHeight="21.0" prefWidth="59.0" text="Nom :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="121.0" prefHeight="23.0" prefWidth="91.0" text="Prenom :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="169.0" prefHeight="23.0" prefWidth="117.0" text="Téléphone :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="217.0" prefHeight="23.0" prefWidth="76.0" text="Login :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="268.0" prefHeight="23.0" prefWidth="145.0" text="Mot de passe :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValider" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="338.0" mnemonicParsing="false" onAction="#valider" prefHeight="43.0" prefWidth="150.0" text="VALIDER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAnnuler" alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="338.0" mnemonicParsing="false" onAction="#annuler" prefHeight="43.0" prefWidth="150.0" text="ANNULER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nomfield" layoutX="178.0" layoutY="66.0" prefHeight="37.0" prefWidth="293.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="prenomfield" layoutX="208.0" layoutY="114.0" prefHeight="37.0" prefWidth="263.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="telfield" layoutX="231.0" layoutY="162.0" prefHeight="37.0" prefWidth="240.0" promptText="0123456789">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="loginfield" layoutX="189.0" layoutY="210.0" prefHeight="37.0" prefWidth="282.0" promptText="25 caractères max">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="mdpfield" layoutX="257.0" layoutY="261.0" prefHeight="37.0" prefWidth="215.0" promptText="12 caractères max">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
