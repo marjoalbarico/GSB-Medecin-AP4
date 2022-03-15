@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="paneID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ModifControleur">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="14.0" prefHeight="27.0" prefWidth="537.0" text="MODIFIER LES INFORMATIONS DE MEDECIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValider" alignment="CENTER" contentDisplay="CENTER" layoutX="371.0" layoutY="305.0" mnemonicParsing="false" onAction="#buttonUpdate" prefHeight="33.0" prefWidth="198.0" text="METTRE A JOUR" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAnnuler" alignment="CENTER" contentDisplay="CENTER" layoutX="371.0" layoutY="346.0" mnemonicParsing="false" onAction="#buttonAnnuler" prefHeight="33.0" prefWidth="198.0" text="ANNULER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="65.0" text="Nom :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="65.0" prefHeight="21.0" prefWidth="77.0" text="Prenom :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="98.0" prefHeight="21.0" prefWidth="105.0" text="Adresse :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="218.0" prefHeight="21.0" prefWidth="98.0" text="Téléphone :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="218.0" prefHeight="21.0" prefWidth="120.0" text="Departement :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="258.0" prefHeight="21.0" prefWidth="231.0" text="Spécialité Complementaire :" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomField" layoutX="70.0" layoutY="59.0" prefHeight="32.0" prefWidth="216.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="prenomField" layoutX="371.0" layoutY="60.0" prefHeight="32.0" prefWidth="216.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="numeroField" layoutX="48.0" layoutY="125.0" prefHeight="32.0" prefWidth="120.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rueField" layoutX="182.0" layoutY="125.0" prefHeight="32.0" prefWidth="390.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="villeField" layoutX="48.0" layoutY="168.0" prefHeight="32.0" prefWidth="289.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cpField" layoutX="358.0" layoutY="168.0" prefHeight="32.0" prefWidth="216.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="telField" layoutX="119.0" layoutY="212.0" prefHeight="32.0" prefWidth="184.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="deptField" layoutX="451.0" layoutY="213.0" prefHeight="32.0" prefWidth="126.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="speField" layoutX="252.0" layoutY="253.0" prefHeight="32.0" prefWidth="322.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

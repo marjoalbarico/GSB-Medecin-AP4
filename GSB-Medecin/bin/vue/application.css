@@ -1,0 +1,62 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#menuButton{
+	-fx-background-color: #14909f;
+}
+
+#menuButton:hover{
+	-fx-background-color: white;
+	-fx-text-fill: #14909f;
+}
+
+#titlecol{
+	-fx-font-size: 18px;
+}
+
+#titlecolA{
+	-fx-font-size: 18px;
+}
+
+#tableview .table-column {
+  -fx-alignment: CENTER;
+  -fx-font-size: 16.5px;
+}
+
+#menuButtonAjouter{
+	-fx-background-color: #14909f;
+}
+
+#menuButtonAjouter:hover{
+	-fx-background-color: white;
+	-fx-text-fill: #14909f;
+}
+
+#menuButtonFermer{
+	-fx-background-color: #14909f;
+}
+
+#menuButtonFermer:hover{
+	-fx-background-color: white;
+	-fx-text-fill: #14909f;
+}
+
+/*FXML ajouteMed CSS */
+
+#paneID{
+	-fx-background-color: #14909f;
+}
+
+#btnAnnuler{
+	-fx-background-color: #ff5252;
+}
+
+#btnAnnuler:hover{
+	-fx-background-color: #cc2f00;
+}
+
+#btnValider{
+	-fx-background-color: #52cf9d#00ab66;
+}
+
+#btnValider:hover{
+	-fx-background-color: #00ab66;
+}

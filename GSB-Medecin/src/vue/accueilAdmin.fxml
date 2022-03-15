@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.AccueilControleur">
+   <children>
+      <VBox prefHeight="840.0" prefWidth="214.0" style="-fx-background-color: #14909f;">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="menuButton" mnemonicParsing="false" onAction="#buttonAfficher" prefHeight="68.0" prefWidth="214.0" stylesheets="@application.css" text="Afficher la liste de tous les médecin" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="menuButtonAjouter" mnemonicParsing="false" onAction="#buttonAjouter" prefHeight="68.0" prefWidth="214.0" stylesheets="@application.css" text="Ajouter un médecin" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="213.0" text="Recherche d'un medecin" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="searchNomField" promptText="par nom...">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="searchDeptfield" promptText="par département...">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="searchSpefield" promptText="par spécialité...">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnSearch" prefHeight="27.0" prefWidth="123.0" text="CHERCHER" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="45.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Button>
+            <Button fx:id="menuButton" mnemonicParsing="false" onAction="#buttonProfilAdmin" prefHeight="68.0" prefWidth="214.0" stylesheets="@application.css" text="MON PROFIL" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="menuButton" mnemonicParsing="false" onAction="#buttonAddAdmin" prefHeight="68.0" prefWidth="214.0" stylesheets="@application.css" text="Ajouter un nouveau compte ADMIN" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="menuButton" mnemonicParsing="false" onAction="#buttonFermer" prefHeight="68.0" prefWidth="214.0" stylesheets="@application.css" text="DECONNEXION" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="tableview" layoutX="213.0" layoutY="106.0" prefHeight="734.0" prefWidth="1227.0" stylesheets="@application.css">
+        <columns>
+          <TableColumn id="titlecolA" fx:id="colNom" editable="false" prefWidth="129.0" resizable="false" text="NOM " />
+          <TableColumn id="titlecolA" fx:id="colPre" editable="false" prefWidth="137.0" resizable="false" sortable="false" text="PRENOM" />
+            <TableColumn id="titlecolA" fx:id="colAdr" editable="false" prefWidth="445.0" resizable="false" sortable="false" text="ADRESSE" />
+            <TableColumn id="titlecolA" fx:id="colTel" editable="false" prefWidth="124.0" resizable="false" sortable="false" text="TELEPHONE" />
+            <TableColumn id="titlecolA" fx:id="colDept" editable="false" prefWidth="65.0" resizable="false" text="DEPT " />
+            <TableColumn id="titlecolA" fx:id="colSpe" editable="false" prefWidth="337.0" resizable="false" text="SPECIALITE" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelID" layoutX="224.0" layoutY="3.0" prefHeight="43.0" prefWidth="1056.0" text="La liste de tous les médecins." wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelID1" layoutX="224.0" layoutY="44.0" prefHeight="28.0" prefWidth="77.0" text="Trier par : " wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="295.0" layoutY="45.0" mnemonicParsing="false" onAction="#NomAZ" prefHeight="27.0" prefWidth="106.0" text="NOM : A - Z" />
+      <Button layoutX="295.0" layoutY="75.0" mnemonicParsing="false" onAction="#NomZA" prefHeight="27.0" prefWidth="106.0" text="NOM : Z - A" />
+      <Button layoutX="408.0" layoutY="45.0" mnemonicParsing="false" onAction="#DeptAsc" prefHeight="27.0" prefWidth="167.0" text="DEPARTEMENT : 1 - 9" />
+      <Button layoutX="408.0" layoutY="75.0" mnemonicParsing="false" onAction="#DepDes" prefHeight="27.0" prefWidth="167.0" text="DEPARTEMENT : 9 - 1" />
+      <Button layoutX="582.0" layoutY="45.0" mnemonicParsing="false" onAction="#SpeAZ" prefHeight="27.0" prefWidth="167.0" text="SPECIALITÉ : A - Z" />
+      <Button layoutX="582.0" layoutY="75.0" mnemonicParsing="false" onAction="#speZA" prefHeight="27.0" prefWidth="167.0" text="SPECIALITÉ : Z - A" />
+      <Button fx:id="buttonModifier" layoutX="1129.0" layoutY="73.0" mnemonicParsing="false" onAction="#modifierMed" text="MODIFIER">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonSupprimer" layoutX="1236.0" layoutY="73.0" mnemonicParsing="false" onAction="#supprimerMed" text="SUPPRIMER">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelModSup" alignment="CENTER" contentDisplay="CENTER" layoutX="1078.0" layoutY="18.0" prefHeight="57.0" prefWidth="298.0" text="Sélectionnez d'abord le médecin que vous souhaitez modifier/supprimer." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
